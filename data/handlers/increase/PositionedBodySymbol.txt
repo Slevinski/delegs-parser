@@ -1,0 +1,23 @@
+	public void increase() {
+		assert canIncrease();
+
+		int newFill = getSymbol().getFill();
+
+		if (getBaseSymbol().equals(BodyBaseSymbol.S375.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol().equals(BodyBaseSymbol.S371.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol().equals(BodyBaseSymbol.S370.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol()
+						.equals(BodyBaseSymbol.S36f.getIswaSymbol().getBaseSymbol())) {
+			if (getSymbol().getFill() == 1) {
+				newFill = 2;
+			} else if (getSymbol().getFill() == 2) {
+				newFill = 4;
+			} else if (getSymbol().getFill() == 3) {
+				newFill = 5;
+			}
+		} else {
+			newFill = 2;
+		}
+
+		setFillAndRotation(newFill, getSymbol().getRotation());
+	}

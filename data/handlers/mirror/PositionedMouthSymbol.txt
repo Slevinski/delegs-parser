@@ -1,0 +1,55 @@
+	public void mirror() {
+		assert canMirror() : "Precondition failed: canMirrorHorizontal()";
+
+		BaseSymbol baseSymbol = getSymbol().getBaseSymbol();
+		int newFill = getSymbol().getFill();
+
+		if (baseSymbol.equals(MouthBaseSymbol.S365.getIswaSymbol().getBaseSymbol())) {
+			if (newFill == 3) {
+				newFill = 4;
+			} else {
+				newFill = 3;
+			}
+
+			setFillAndRotation(newFill, getSymbol().getRotation());
+
+		} else if (baseSymbol.equals(MouthBaseSymbol.S33e.getIswaSymbol().getBaseSymbol())
+				|| baseSymbol.equals(MouthBaseSymbol.S33f.getIswaSymbol().getBaseSymbol())
+				|| baseSymbol.equals(MouthBaseSymbol.S340.getIswaSymbol().getBaseSymbol())
+				|| baseSymbol.equals(MouthBaseSymbol.S341.getIswaSymbol().getBaseSymbol())
+				|| baseSymbol.equals(MouthBaseSymbol.S342.getIswaSymbol().getBaseSymbol())
+				|| baseSymbol.equals(MouthBaseSymbol.S343.getIswaSymbol().getBaseSymbol())) {
+
+			BaseSymbol newBaseSymbol = null;
+
+			if (baseSymbol.getSymbol() == 2) {
+				newBaseSymbol = new BaseSymbol(baseSymbol.getCategory(), baseSymbol.getGroup(),
+						baseSymbol.getSymbol() + 1, baseSymbol.getVariation());
+			} else {
+				newBaseSymbol = new BaseSymbol(baseSymbol.getCategory(), baseSymbol.getGroup(),
+						baseSymbol.getSymbol() - 1, baseSymbol.getVariation());
+			}
+			Symbol newSymbol = getMouthSymbolForBaseSymbolWithFillAndRotation(newBaseSymbol, getSymbol().getFill(),
+					getSymbol().getRotation());
+			setSymbol(newSymbol);
+
+		} else if (baseSymbol.equals(MouthBaseSymbol.S354.getIswaSymbol().getBaseSymbol())
+				|| baseSymbol.equals(MouthBaseSymbol.S355.getIswaSymbol().getBaseSymbol())) {
+
+			BaseSymbol newBaseSymbol = null;
+
+			if (baseSymbol.getVariation() == 2) {
+				newBaseSymbol = new BaseSymbol(baseSymbol.getCategory(), baseSymbol.getGroup(), baseSymbol.getSymbol(),
+						baseSymbol.getVariation() + 1);
+			} else {
+				newBaseSymbol = new BaseSymbol(baseSymbol.getCategory(), baseSymbol.getGroup(), baseSymbol.getSymbol(),
+						baseSymbol.getVariation() - 1);
+			}
+
+			Symbol newSymbol = getMouthSymbolForBaseSymbolWithFillAndRotation(newBaseSymbol, getSymbol().getFill(),
+					getSymbol().getRotation());
+			setSymbol(newSymbol);
+
+		}
+
+	}

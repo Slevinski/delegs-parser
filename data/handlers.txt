@@ -1,0 +1,14 @@
+decrease
+increase
+mirror
+mirrorVertically
+pitch
+roll
+rotateClockwise
+rotateCounterClockwise
+switchArrowHead
+switchPlane
+switchSize
+switchStartingPoint
+switchToAlternatingArrows
+switchToNormalArrows

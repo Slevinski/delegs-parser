@@ -1,0 +1,25 @@
+	public void increase() {
+		assert canIncrease() : "Precondition failed: canIncrease()";
+
+		// increase is a change in Rotation for HEAD_MOVEMENT_CIRCLES
+		if (HeadPostureBaseSymbol.S306.getIswaSymbol().getBaseSymbol()
+				.equals(getSymbol().getBaseSymbol())) {
+			int newRotation = getSymbol().getRotation() + 2;
+			setFillAndRotation(getSymbol().getFill(), newRotation);
+		} else {
+
+			int newFill = getSymbol().getFill() + 1;
+
+			if ((HeadPostureBaseSymbol.S303.getIswaSymbol().getBaseSymbol()
+					.equals(getSymbol().getBaseSymbol())
+					|| HeadPostureBaseSymbol.S301.getIswaSymbol().getBaseSymbol()
+							.equals(getSymbol().getBaseSymbol()))
+					&& newFill == 3) {
+				newFill = 4;
+			}
+
+			setFillAndRotation(newFill, getSymbol().getRotation());
+
+		}
+
+	}

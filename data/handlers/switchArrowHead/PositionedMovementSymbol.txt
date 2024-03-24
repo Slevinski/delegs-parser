@@ -1,0 +1,31 @@
+	public void switchArrowHead() {
+		assert canSwitchArrowHead() : "Precondition failed: canSwitchArrowHead()";
+
+		int newFill = (getSymbol().getFill() % 3) + 1;
+
+		if ((getSymbol().getFill() > 3) && (getBaseSymbol()
+				.equals(MovementBaseSymbol.S2e7.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol()
+						.equals(MovementBaseSymbol.S2ea.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol()
+						.equals(MovementBaseSymbol.S2e8.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol()
+						.equals(MovementBaseSymbol.S2eb.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol()
+						.equals(MovementBaseSymbol.S2e9.getIswaSymbol().getBaseSymbol())
+				|| getBaseSymbol()
+						.equals(MovementBaseSymbol.S2ec.getIswaSymbol().getBaseSymbol())
+				|| (getBaseSymbol().equals(MovementBaseSymbol.S2b7.getIswaSymbol().getBaseSymbol())
+						&& getSymbol().getFill() > 3)
+				|| (getBaseSymbol().equals(MovementBaseSymbol.S2b8.getIswaSymbol().getBaseSymbol())
+						&& getSymbol().getFill() > 3)
+				|| (getBaseSymbol().equals(MovementBaseSymbol.S2c6.getIswaSymbol().getBaseSymbol())
+						&& getSymbol().getFill() > 3)
+				|| (getBaseSymbol().equals(MovementBaseSymbol.S2c7.getIswaSymbol().getBaseSymbol())
+						&& getSymbol().getFill() > 3))) {
+			newFill += 3;
+		}
+
+		setFillAndRotation(newFill, getSymbol().getRotation());
+
+	}

@@ -1,0 +1,17 @@
+	public void decrease() {
+		assert canDecrease() : "Precondition failed: canDecrease()";
+
+		int oldFillLeftEye = getSymbol().getFill();
+		int oldRotationLeftEye = getSymbol().getRotation();
+
+		if (getSymbol().getBaseSymbol()
+				.equals(EyesBaseSymbol.S322.getIswaSymbol().getBaseSymbol())) {
+			Symbol increasedSymbol = EyesBaseSymbol.S321.getIswaSymbol();
+			setSymbol(increasedSymbol);
+		} else if (getSymbol().getBaseSymbol()
+				.equals(EyesBaseSymbol.S325.getIswaSymbol().getBaseSymbol())) {
+			Symbol increasedSymbol = EyesBaseSymbol.S324.getIswaSymbol();
+			setSymbol(increasedSymbol);
+		}
+		setFillAndRotation(oldFillLeftEye, oldRotationLeftEye);
+	}

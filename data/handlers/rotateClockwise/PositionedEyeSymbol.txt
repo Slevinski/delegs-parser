@@ -1,0 +1,21 @@
+	public void rotateClockwise() {
+		assert canRotate() : "Precondition failed: canRotate()";
+
+		if (getSymbol().getBaseSymbol()
+				.equals(EyesBaseSymbol.S323.getIswaSymbol().getBaseSymbol())) {
+			getPreviousRotation();
+		} else {
+			if ((getSymbol().getBaseSymbol()
+					.equals(EyesBaseSymbol.S327.getIswaSymbol().getBaseSymbol())
+					|| getSymbol().getBaseSymbol()
+							.equals(EyesBaseSymbol.S328.getIswaSymbol().getBaseSymbol())
+					|| getSymbol().getBaseSymbol()
+							.equals(EyesBaseSymbol.S329.getIswaSymbol().getBaseSymbol()))
+					&& getSymbol().getRotation() > EyesBaseSymbol.getEyesBaseSymbol(getSymbol().getBaseSymbol())
+							.getValidRotations().size() / 2) {
+				getNextRotation();
+			} else {
+				getPreviousRotation();
+			}
+		}
+	}

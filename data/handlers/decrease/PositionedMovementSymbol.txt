@@ -1,0 +1,584 @@
+	public void decrease() {
+		assert canDecrease() : "Precondition failed: canDecrease()";
+		MovementBaseSymbol movementBaseSymbol = MovementBaseSymbol.getMovementBaseSymbol(getSymbol().getBaseSymbol());
+
+		List<Symbol> allVariations = new ArrayList<Symbol>();
+
+		if ((MovementBaseSymbol.S206.equals(movementBaseSymbol))) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S206.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S205.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 1, 1, 1, 1, 1, 10, 11));
+			}
+		} else if (MovementBaseSymbol.S207.equals(movementBaseSymbol) && getSymbol().getFill() == 2) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S207.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			}
+		} else if (MovementBaseSymbol.S209.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S209.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S208.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 1, 4, 1, 1, 1, 10, 10));
+			}
+		} else if (MovementBaseSymbol.S20a.equals(movementBaseSymbol) && getSymbol().getFill() == 2) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S20a.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			}
+		} else if (MovementBaseSymbol.S20c.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S20c.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S20b.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 1, 7, 1, 1, 1, 13, 13));
+			}
+		} else if (MovementBaseSymbol.S20d.equals(movementBaseSymbol) && getSymbol().getFill() == 2) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S20d.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			}
+		} else if (MovementBaseSymbol.S20f.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S20f.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S20e.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 1, 10, 1, 1, 1, 12, 12));
+			}
+		} else if (MovementBaseSymbol.S210.equals(movementBaseSymbol) && getSymbol().getFill() == 2) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S210.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			}
+		} else if (MovementBaseSymbol.S212.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S212.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S211.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 1, 13, 1, 1, 1, 13, 14));
+			}
+		} else if (MovementBaseSymbol.S213.equals(movementBaseSymbol) && getSymbol().getFill() == 2) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S213.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S218.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S218.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S216.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 2, 1, 1, 1, 1, 8, 8));
+			}
+
+		} else if (MovementBaseSymbol.S219.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S219.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S217.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 2, 1, 2, 1, 1, 6, 6));
+			}
+
+		} else if (MovementBaseSymbol.S21a.equals(movementBaseSymbol) && getSymbol().getFill() > 1
+				&& getSymbol().getFill() < 5) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S21a.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+		} else if (MovementBaseSymbol.S21d.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S21d.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S21b.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 2, 4, 1, 1, 1, 8, 8));
+			}
+		} else if (MovementBaseSymbol.S21e.equals(movementBaseSymbol)) {
+			if (getSymbol().getFill() == 2) {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S21e.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else {
+				allVariations = getAllVariationsForBaseSymbol(
+						MovementBaseSymbol.S21c.getIswaSymbol().getBaseSymbol());
+
+				validVariations.clear();
+				validVariations.addAll(allVariations);
+				setSymbol(new Symbol(2, 2, 4, 2, 1, 1, 6, 6));
+			}
+		} else if (MovementBaseSymbol.S21f.equals(movementBaseSymbol) && getSymbol().getFill() > 1
+				&& getSymbol().getFill() < 5) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S21f.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			}
+			if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			}
+
+			if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S221.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S221.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 5) {
+				setFillAndRotation(4, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S222.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S222.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 5) {
+				setFillAndRotation(4, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S223.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1 && getSymbol().getFill() < 5) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S223.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S224.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1 && getSymbol().getFill() < 5) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S224.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S225.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S225.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S226.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S226.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S227.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S227.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 3) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S228.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S228.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 3 || getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 5) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+
+		} else if (MovementBaseSymbol.S229.equals(movementBaseSymbol)
+				&& getSymbol().getFill() > 1) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S229.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			if (getSymbol().getFill() == 3 || getSymbol().getFill() == 2) {
+				setFillAndRotation(1, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 4) {
+				setFillAndRotation(2, getSymbol().getRotation());
+			} else if (getSymbol().getFill() == 5) {
+				setFillAndRotation(3, getSymbol().getRotation());
+			}
+		}
+
+		else if (MovementBaseSymbol.S22f.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S22a.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S230.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S22e.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S234.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S22f.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S235.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S230.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S24c.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S24b.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S24f.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S24e.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S253.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S252.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S254.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S253.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S26a.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S265.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S26b.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S269.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S26f.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S26a.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S270.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S26b.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S282.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S281.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S285.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S284.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S298.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S295.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2a3.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2a2.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2ab.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2aa.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2b2.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2b1.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2c4.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2c3.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2d3.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2d2.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2e0.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2df.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2e5.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2e3.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2e6.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2e4.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2ea.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2e7.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2eb.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2e8.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2ec.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2e9.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2ee.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2ed.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2f0.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2ef.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2f2.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2f1.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		} else if (MovementBaseSymbol.S2f4.equals(movementBaseSymbol)) {
+			allVariations = getAllVariationsForBaseSymbol(
+					MovementBaseSymbol.S2f3.getIswaSymbol().getBaseSymbol());
+
+			validVariations.clear();
+			validVariations.addAll(allVariations);
+			setFillAndRotation(getSymbol().getFill(), getSymbol().getRotation());
+		}
+	}

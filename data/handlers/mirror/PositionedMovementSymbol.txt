@@ -1,0 +1,287 @@
+	public void mirror() {
+		assert canMirror() : "Precondition failed: canMirror()";
+
+		int newRotation = getSymbol().getRotation();
+		if ((MovementBaseSymbol.S206.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S207.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S209.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S20a.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S20c.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S20d.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S20f.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S210.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S212.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S213.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S215.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S218.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S219.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S21d.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S21e.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))) {
+			if (getSymbol().getRotation() == 2) {
+				newRotation = 4;
+			} else if (getSymbol().getRotation() == 4) {
+				newRotation = 2;
+			}
+		} else if ((MovementBaseSymbol.S214.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S220.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S221.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S222.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S225.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S226.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S227.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S228.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S229.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S22a.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S22b.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S22c.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S22d.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S22e.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S22f.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S230.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S234.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S235.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S251.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S265.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S266.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S267.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S268.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S269.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S26a.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S26b.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S26f.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S270.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S287.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2f5.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2f6.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))) {
+			if (getSymbol().getRotation() == 2) {
+				newRotation = 8;
+			} else if (getSymbol().getRotation() == 3) {
+				newRotation = 7;
+			} else if (getSymbol().getRotation() == 4) {
+				newRotation = 6;
+			} else if (getSymbol().getRotation() == 6) {
+				newRotation = 4;
+			} else if (getSymbol().getRotation() == 7) {
+				newRotation = 3;
+			} else if (getSymbol().getRotation() == 8) {
+				newRotation = 2;
+			}
+		} else if ((MovementBaseSymbol.S255.getIswaSymbol().getBaseSymbol()
+				.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S256.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S257.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S258.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S259.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S25a.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S25b.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S25c.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S25d.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S25e.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S25f.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S260.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S261.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S262.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S263.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S264.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))) {
+			if (getSymbol().getRotation() == 2) {
+				newRotation = 8;
+			} else if (getSymbol().getRotation() == 4) {
+				newRotation = 6;
+			} else if (getSymbol().getRotation() == 6) {
+				newRotation = 4;
+			} else if (getSymbol().getRotation() == 8) {
+				newRotation = 2;
+			}
+		} else if ((MovementBaseSymbol.S2a6.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2a7.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2a8.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2a9.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2aa.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2ab.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2ac.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2ad.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2ae.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2af.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2b0.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2b1.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2b2.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2b3.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))) {
+			if (getSymbol().getRotation() == 1) {
+				newRotation = 2;
+			} else if (getSymbol().getRotation() == 2) {
+				newRotation = 1;
+			} else if (getSymbol().getRotation() == 3) {
+				newRotation = 4;
+			} else if (getSymbol().getRotation() == 4) {
+				newRotation = 3;
+			}
+		} else if ((MovementBaseSymbol.S2b7.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2b8.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2b9.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2ba.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2bb.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2bc.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2bd.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2be.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2bf.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c0.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c1.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c2.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c3.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c4.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c5.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c6.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c7.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c8.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2c9.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2ca.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2cb.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2cc.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2cd.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2ce.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2cf.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2d0.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2d1.getIswaSymbol().getBaseSymbol().equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2d2.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2d3.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2d4.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))) {
+			if (getSymbol().getRotation() == 1) {
+				newRotation = 2;
+			} else if (getSymbol().getRotation() == 2) {
+				newRotation = 1;
+			} else if (getSymbol().getRotation() == 3) {
+				newRotation = 8;
+			} else if (getSymbol().getRotation() == 4) {
+				newRotation = 7;
+			} else if (getSymbol().getRotation() == 5) {
+				newRotation = 6;
+			} else if (getSymbol().getRotation() == 6) {
+				newRotation = 5;
+			} else if (getSymbol().getRotation() == 7) {
+				newRotation = 4;
+			} else if (getSymbol().getRotation() == 8) {
+				newRotation = 3;
+			}
+		} else if ((MovementBaseSymbol.S2ef.getIswaSymbol().getBaseSymbol()
+				.equals(getBaseSymbol()) && getSymbol().getRotation() < 5)
+				|| (MovementBaseSymbol.S2f0.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()) && getSymbol().getRotation() < 5)) {
+			if (getSymbol().getRotation() == 1) {
+				newRotation = 2;
+			} else if (getSymbol().getRotation() == 2) {
+				newRotation = 1;
+			} else if (getSymbol().getRotation() == 3) {
+				newRotation = 4;
+			} else if (getSymbol().getRotation() == 4) {
+				newRotation = 3;
+			}
+		} else if ((MovementBaseSymbol.S2f3.getIswaSymbol().getBaseSymbol()
+				.equals(getBaseSymbol()))
+				|| (MovementBaseSymbol.S2f4.getIswaSymbol().getBaseSymbol()
+						.equals(getBaseSymbol()))) {
+			if (getSymbol().getRotation() == 1) {
+				newRotation = 3;
+			} else if (getSymbol().getRotation() == 2) {
+				newRotation = 4;
+			} else if (getSymbol().getRotation() == 3) {
+				newRotation = 1;
+			} else if (getSymbol().getRotation() == 4) {
+				newRotation = 2;
+			} else if (getSymbol().getRotation() == 5) {
+				newRotation = 6;
+			} else if (getSymbol().getRotation() == 6) {
+				newRotation = 5;
+			} else if (getSymbol().getRotation() == 7) {
+				newRotation = 8;
+			} else if (getSymbol().getRotation() == 8) {
+				newRotation = 7;
+			}
+		} else if (getSymbol().getBaseSymbol()
+				.equals(MovementBaseSymbol.S2f1.getIswaSymbol().getBaseSymbol())
+				|| getSymbol().getBaseSymbol()
+						.equals(MovementBaseSymbol.S2f2.getIswaSymbol().getBaseSymbol())) {
+			newRotation += 4;
+			if (newRotation > 8) {
+				newRotation -= 8;
+			}
+		} else {
+			newRotation += 8;
+			if (newRotation > 16) {
+				newRotation -= 16;
+			}
+		}
+
+		setFillAndRotation(getSymbol().getFill(), newRotation);
+
+	}
